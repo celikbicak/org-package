@@ -14,8 +14,10 @@ enum CustomValue {
   TypeD = 'valueD',
 }
 
-export function orgPackage(): void {
-  console.log(enum2array(CustomType));
+export function orgPackage(): any[] {
+  const result1 = enum2array(CustomType);
 
-  console.log(enum2array(CustomValue));
+  const result2 = enum2array(CustomValue);
+
+  return [...result1, ...result2];
 }
