@@ -1,5 +1,5 @@
 {
-  "name": "org-package",
+  "name": "@celikbicak/org-package",
   "version": "1.0.0",
   "description": "A test package for organization both github and npm",
   "main": "lib/index.js",
