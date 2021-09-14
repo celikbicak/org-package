@@ -1,4 +1,5 @@
 import { enum2array } from 'enum2array';
+import { storageFunction } from 'storage-function';
 
 enum CustomType {
   TypeA = 1,
@@ -19,5 +20,10 @@ export function orgPackage(): any[] {
 
   const result2 = enum2array(CustomValue);
 
-  return [...result1, ...result2];
+  const result = [...result1, ...result2];
+
+  storageFunction.toLocalStorage('localKey', result);
+  storageFunction.toSessionStorage('sessionKey', result);
+
+  return result;
 }

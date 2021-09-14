@@ -27,15 +27,16 @@
   },
   "homepage": "https://github.com/celikbicak/org-package#readme",
   "devDependencies": {
-    "prettier": "^2.3.0",
+    "prettier": "^2.4.0",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.3.2"
+    "typescript": "^4.4.3"
   },
   "files": [
     "lib/**/*"
   ],
   "dependencies": {
-    "enum2array": "^1.1.2"
+    "enum2array": "^1.1.16",
+    "storage-function": "^2.1.3"
   }
 }
